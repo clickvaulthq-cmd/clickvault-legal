@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – PasteGuard</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0b0b0b;
+      color: #e4e4e7;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    a { color: #f97316; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid #18181b;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f97316;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .brand-sep {
+      color: #3f3f46;
+      margin: 0 6px;
+    }
+
+    .brand-page {
+      font-size: 14px;
+      color: #71717a;
+    }
+
+    .store-link {
+      font-size: 13px;
+      color: #a1a1aa;
+      border: 1px solid #27272a;
+      border-radius: 8px;
+      padding: 7px 14px;
+    }
+
+    main {
+      padding: 56px 0 80px;
+    }
+
+    .page-eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f97316;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .effective {
+      color: #71717a;
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #18181b;
+    }
+
+    .summary-box {
+      background: rgba(249, 115, 22, 0.06);
+      border: 1px solid rgba(249, 115, 22, 0.2);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 48px;
+    }
+
+    .summary-box h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #f97316;
+      margin-bottom: 14px;
+    }
+
+    .summary-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .summary-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: #d4d4d8;
+    }
+
+    .summary-list li::before {
+      content: '✓';
+      color: #22c55e;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    section {
+      margin-bottom: 44px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: #a1a1aa;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #a1a1aa;
+      font-size: 15px;
+    }
+
+    ul li::before {
+      content: '–';
+      color: #f97316;
+      flex-shrink: 0;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+    }
+
+    .data-table th {
+      text-align: left;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #52525b;
+      padding: 10px 14px;
+      border-bottom: 1px solid #27272a;
+    }
+
+    .data-table td {
+      padding: 12px 14px;
+      font-size: 14px;
+      color: #a1a1aa;
+      border-bottom: 1px solid #18181b;
+      vertical-align: top;
+    }
+
+    .data-table td:first-child {
+      color: #e4e4e7;
+      font-weight: 500;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #121212;
+      border: 1px solid #27272a;
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-family: monospace;
+      color: #f97316;
+    }
+
+    .never-box {
+      background: rgba(239, 68, 68, 0.05);
+      border: 1px solid rgba(239, 68, 68, 0.15);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 8px;
+    }
+
+    .never-box h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ef4444;
+      margin-bottom: 12px;
+    }
+
+    .never-box ul li::before { color: #ef4444; content: '✗'; }
+    .never-box ul li { color: #d4d4d8; }
+
+    .contact-box {
+      background: #121212;
+      border: 1px solid #27272a;
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .contact-box p { font-size: 14px; }
+
+    footer {
+      border-top: 1px solid #18181b;
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: #52525b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <div>
+          <div class="brand-eyebrow">ClickVault</div>
+          <div>
+            <span class="brand-name">PasteGuard</span>
+            <span class="brand-sep">/</span>
+            <span class="brand-page">Privacy Policy</span>
+          </div>
+        </div>
+      </div>
+      <a class="store-link" href="https://chromewebstore.google.com" target="_blank">Chrome Web Store →</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="page-eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective date: March 2026 &nbsp;·&nbsp; ClickVault Extensions &nbsp;·&nbsp; PasteGuard v0.1.0</p>
+
+    <div class="summary-box">
+      <h2>Plain English Summary</h2>
+      <ul class="summary-list">
+        <li>PasteGuard never reads your clipboard unless you actively press paste.</li>
+        <li>Your clipboard contents are never transmitted to any server, ever.</li>
+        <li>No analytics, no telemetry, no third-party tracking of any kind.</li>
+        <li>The only data stored is your settings (on/off, trusted domains) — locally in your browser.</li>
+        <li>You can uninstall and all data is gone instantly.</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>1. Who we are</h2>
+      <p>PasteGuard is a Chrome browser extension developed by ClickVault Extensions. It is a standalone tool with no user accounts, no backend servers, and no cloud infrastructure required for its core function.</p>
+      <p>Contact: <a href="mailto:support@clickvault.io">support@clickvault.io</a></p>
+    </section>
+
+    <section>
+      <h2>2. What data PasteGuard accesses</h2>
+      <p>PasteGuard accesses clipboard content <strong style="color:#fff">only</strong> at the exact moment you perform a paste action (Ctrl+V or equivalent) in a browser tab. This access is read-only, instantaneous, and never stored.</p>
+      <p>The content is checked against detection patterns locally in your browser. The result of that check (block or allow) is determined entirely on your device. The clipboard content itself is discarded immediately after the check.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>When accessed</th>
+            <th>Stored?</th>
+            <th>Transmitted?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clipboard text</td>
+            <td>Only during a paste event</td>
+            <td>Never</td>
+            <td>Never</td>
+          </tr>
+          <tr>
+            <td>Detection result</td>
+            <td>Immediately after paste check</td>
+            <td>Block count only</td>
+            <td>Never</td>
+          </tr>
+          <tr>
+            <td>Extension settings</td>
+            <td>On extension load and change</td>
+            <td>Yes — locally</td>
+            <td>Never</td>
+          </tr>
+          <tr>
+            <td>Trusted domains</td>
+            <td>When you add a trusted site</td>
+            <td>Yes — locally</td>
+            <td>Never</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. What data is stored locally</h2>
+      <p>PasteGuard uses <span class="tag">chrome.storage.sync</span> to persist the following settings across browser sessions:</p>
+      <ul>
+        <li>Whether protection is enabled or disabled</li>
+        <li>Whether strict mode is enabled</li>
+        <li>Whether to skip password fields</li>
+        <li>Your list of trusted domains</li>
+        <li>A running count of pastes blocked (number only, no content)</li>
+      </ul>
+      <p>This data is stored in Chrome's built-in sync storage. If you are signed into Chrome, Google may sync this settings data across your devices per Google's own privacy policy. PasteGuard itself has no access to this synced data beyond reading and writing your settings.</p>
+      <p>No clipboard content, no paste history, and no sensitive values are ever written to storage.</p>
+    </section>
+
+    <section>
+      <h2>4. What PasteGuard never does</h2>
+      <div class="never-box">
+        <h3>Hard guarantees</h3>
+        <ul>
+          <li>Never reads your clipboard in the background or proactively</li>
+          <li>Never transmits clipboard content to any external server</li>
+          <li>Never sends analytics, usage data, or telemetry</li>
+          <li>Never injects third-party scripts or loads remote code</li>
+          <li>Never creates a user account or requires login</li>
+          <li>Never accesses passwords, form data, or browser history</li>
+          <li>Never sells, shares, or monetises any user data</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. Permissions explained</h2>
+      <p>PasteGuard requests the following Chrome permissions:</p>
+      <ul>
+        <li><span class="tag">storage</span> — Used to save your settings and trusted domains list locally in Chrome.</li>
+        <li><span class="tag">host_permissions: &lt;all_urls&gt;</span> — Required so that PasteGuard can intercept paste events on every website you visit. Without this permission, the extension could only protect a manually specified list of sites. Clipboard protection that only works on some sites is not real protection. This permission does not grant access to your browsing history, tab contents, or any page data — it only enables the paste event listener.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Third parties</h2>
+      <p>PasteGuard has no third-party integrations, SDKs, or analytics libraries. The extension makes zero outbound network requests during normal operation.</p>
+      <p>If you purchase a paid licence, payment is processed by Stripe via ExtensionPay. That transaction is handled entirely by Stripe's infrastructure and is subject to Stripe's privacy policy. PasteGuard does not receive or store your payment details.</p>
+    </section>
+
+    <section>
+      <h2>7. Children's privacy</h2>
+      <p>PasteGuard is a developer tool intended for adults. We do not knowingly collect any data from children under 13. If you believe a child has provided personal information, please contact us and we will address it immediately.</p>
+    </section>
+
+    <section>
+      <h2>8. Changes to this policy</h2>
+      <p>If we make material changes to this privacy policy, we will update the effective date at the top of this page and, where appropriate, notify users via the Chrome Web Store listing update notes.</p>
+      <p>Continued use of PasteGuard after a policy update constitutes acceptance of the revised terms.</p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <div class="contact-box">
+        <p>Questions about this privacy policy or how PasteGuard handles data:</p>
+        <p style="margin-top:12px;">
+          <strong style="color:#fff">ClickVault Extensions</strong><br>
+          <a href="mailto:support@clickvault.io">support@clickvault.io</a>
+        </p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span>© 2026 ClickVault Extensions · PasteGuard</span>
+      <span>No data collected · No backend · No tracking</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
