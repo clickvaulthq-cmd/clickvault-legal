@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemoryVault Privacy Policy</title>
+  <meta name="description" content="Privacy policy for MemoryVault, a Chrome extension that saves AI conversations locally in your browser.">
+  <style>
+    :root {
+      --bg: #0C0A1E;
+      --surface: #12102A;
+      --border: #2D2B52;
+      --text: #F1F0FF;
+      --text-secondary: #A8A4CC;
+      --accent: #7C3AED;
+      --accent-light: rgba(124, 58, 237, 0.15);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .header { text-align: center; padding: 3rem 1.5rem 2rem; border-bottom: 1px solid var(--border); }
+    .header-logo { display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .header-logo svg { width: 36px; height: 36px; }
+    .header-logo span { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    .header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+    .header .updated { color: var(--text-secondary); font-size: 0.9rem; }
+    .container { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    h2 { font-size: 1.25rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 0.75rem; color: var(--text); letter-spacing: -0.01em; }
+    p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem; }
+    ul { color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .highlight-box { background: var(--accent-light); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 2rem 0; }
+    .highlight-box p { color: var(--text); margin-bottom: 0; font-weight: 500; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { text-align: center; padding: 2rem 1.5rem; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.85rem; }
+    @media (max-width: 600px) { .header h1 { font-size: 1.5rem; } .container { padding: 1.5rem 1rem 3rem; } }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="8" fill="#7C3AED"/><path d="M10 12a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H12a2 2 0 01-2-2V12z" fill="#F1F0FF" opacity="0.2"/><path d="M14 15h8M14 18h6M14 21h4" stroke="#F1F0FF" stroke-width="1.5" stroke-linecap="round"/><circle cx="25" cy="11" r="4" fill="#10B981"/><path d="M23.5 11l1 1 2-2" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>MemoryVault</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 21, 2026</p>
+  </div>
+  <div class="container">
+    <div class="highlight-box"><p>MemoryVault stores all saved conversation content locally in your browser. Your conversations are never uploaded to our servers.</p></div>
+    <h2>About MemoryVault</h2>
+    <p>MemoryVault is a Chrome extension published by ClickVaultHQ. It helps users save, search, tag, and export AI conversations from ChatGPT, Claude, Gemini, and Perplexity into a private local vault in the browser.</p>
+    <h2>What data is stored</h2>
+    <p>MemoryVault stores the following information locally in the user's browser using Chrome extension storage and IndexedDB:</p>
+    <ul><li>Saved conversation content from supported AI platforms (encrypted at rest with AES-GCM)</li><li>Conversation metadata: titles, timestamps, platform labels, tags, notes, and pinned state</li><li>Extension settings such as export format preference and auto-save preference</li><li>Limited local diagnostics such as recent extraction success and failure events</li><li>Local billing state needed for license checks</li></ul>
+    <h2>Supported platforms</h2>
+    <p>MemoryVault operates on the following sites only:</p>
+    <ul><li>chatgpt.com</li><li>claude.ai</li><li>gemini.google.com</li><li>perplexity.ai</li></ul>
+    <p>The extension only interacts with these sites as part of its single purpose: saving conversations that the user explicitly chooses to keep.</p>
+    <h2>What data leaves the browser</h2>
+    <p>Saved conversation content is never sent to ClickVaultHQ servers or any third party. All conversation data remains on the user's device.</p>
+    <p>The extension communicates with ExtensionPay, a third-party billing provider, for payment processing and license validation. These requests may include extension-specific billing identifiers and payment status information, but never the contents of saved conversations.</p>
+    <h2>Storage and encryption</h2>
+    <p>All saved conversation payloads are encrypted at rest using AES-GCM (256-bit) with device-local keys stored in extension storage. Conversation data is stored in IndexedDB within the browser and is not accessible to websites or other extensions.</p>
+    <h2>Data sharing</h2>
+    <p>ClickVaultHQ does not sell, rent, or share saved conversation content with any third party.</p>
+    <p>Saved conversation content is only shared when the user explicitly exports their own data using the built-in export feature.</p>
+    <h2>User controls</h2>
+    <p>Users have full control over their stored data at all times:</p>
+    <ul><li>Delete individual conversations</li><li>Restore recently deleted conversations from Trash (auto-purged after 30 days)</li><li>Clear all saved data at once</li><li>Export conversations to Markdown or plain text</li><li>Uninstall the extension to remove all stored data</li></ul>
+    <h2>Permissions used</h2>
+    <p>MemoryVault requests only three Chrome permissions:</p>
+    <ul><li><strong>storage</strong> — Stores saved conversations, settings, diagnostics, and local billing state in browser storage.</li><li><strong>unlimitedStorage</strong> — Removes default extension storage limits to support larger conversation archives.</li><li><strong>tabs</strong> — Opens the ExtensionPay checkout or account page when the user chooses to upgrade or manage billing.</li></ul>
+    <h2>Children's privacy</h2>
+    <p>MemoryVault is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+    <h2>Changes to this policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be reflected on this page with an updated date. Continued use of the extension after changes constitutes acceptance of the revised policy.</p>
+    <h2>Contact</h2>
+    <p>For privacy questions or data requests related to MemoryVault, contact ClickVaultHQ at <a href="mailto:clickvaulthq@gmail.com">clickvaulthq@gmail.com</a>.</p>
+  </div>
+  <div class="footer">&copy; 2026 ClickVaultHQ. All rights reserved.</div>
+</body>
+</html>
